@@ -13,8 +13,13 @@ Data for this project was obtain from the Coursera assignment instructions. Data
 [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip]
 
 ## Analysis File Description
-The run_analysis.R can be run as long as setting your working directory to the UCI HAR Dataset folder. Dplyr package was required to run this script.
+CodeBook.md a code book that describes the variables, the data, and any transformations or work that I performed to clean up the data
 
-Analysis will read all the test data and train data merge them into one data set. Each variables were names accordingly based on the features listed in the features.txt file.
+run_analysis.R performs the data preparation and then followed by the 5 steps required as described in the course project’s definition:
+Merges the training and the test sets to create one data set.
+Extracts only the measurements on the mean and standard deviation for each measurement.
+Uses descriptive activity names to name the activities in the data set
+Appropriately labels the data set with descriptive variable names.
+From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-Using the combined data set, independent tidy data set with the average of each variable for each activity and each subject was created and written into tidydataset.txt file.
+FinalData.txt is the exported final data after going through all the sequences described above.
